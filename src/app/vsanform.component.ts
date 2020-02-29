@@ -1,7 +1,7 @@
 import { Component} from '@angular/core'
 
 @Component({
-    selector: 'vsan-form',
+    selector: 'vsan-form2',
     templateUrl: './vsanform.component.html',
     styleUrls:['./vsanform.component.css']
     
@@ -10,5 +10,6 @@ import { Component} from '@angular/core'
 export class VsanformComponent{
     onSubmit(){
         console.log('test');
+      
     }
 }

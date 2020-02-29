@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core'
     styleUrls:['./vsan.component.css']
 })
 
-export class VsanComponent{
+export class VsanComponent{ 
     @Input() vsanItem;
-
+   
 }

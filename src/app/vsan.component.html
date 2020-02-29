@@ -1,6 +1,7 @@
-<!--<vsan-form [vsanItem]="firstvsanItem"></vsan-form>-->
-<h1>{{ vsanItem.numNodes}}</h1>
+<vsan-form {{vsanItem}}="firstvsanItem">
+<h1>{{vsanItem.numNodes}}</h1>
 <div>{{vsanItem.numDiskgroups}}</div>
 <div>{{vsanItem.numCapdisks}}</div>
 <div>{{vsanItem.ssdSize}}</div>
 <div>{{vsanItem.FTM}}</div>
+</vsan-form>
