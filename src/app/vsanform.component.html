@@ -1,19 +1,17 @@
-<header>
-
-</header>
-
+<br/>
 <form #vsanForm="ngForm" (ngSubmit)="onSubmit(VsanForm.value)">
-	Number of nodes: <input type="number" name="numNodes" id="numNodes" ngModel/>
-	Number of Disk groups: <input type="number" name="numDiskgroups" id="numDiskgroups" size='4' ngModel/>
-	Number of capacity disks: <input type="number" name="numCapdisks" id="numCapdisks" size='4' ngModel/>
-	Size of SSD (GB): <input type="number" name="ssdSize" id="ssdSize" ngModel/>
-	Storage Policy: <select name="FTM" id="FTM" ngModel>
+	Number of nodes: <input type="number" name="numNodes" id="numNodes" ngModel/><br/>
+	Number of Disk groups: <input type="number" name="numDiskgroups" id="numDiskgroups" size='4' ngModel/><br/>
+	Number of capacity disks: <input type="number" name="numCapdisks" id="numCapdisks" size='4' ngModel/><br/>
+	Size of SSD (GB): <input type="number" name="ssdSize" id="ssdSize" ngModel/><br/>
+	Storage Policy: <select name="FTM" id="FTM" ngModel><br/>
 		<option value="1"> PFTT=0</option>
 		<option value="0.5"> PFTT=1 </option>
 		<option value="0.33"> PFTT=2 </option>
 		<option value="0.25"> PFTT=3 </option>
 		<option value="0.75"> PFTT=RAID5 </option>
 		<option value="0.67"> PFTT=RAID6 </option>
-	</select>
-   <input type="button" name="submit" id="submit" />
+	</select><br/>
+   <input type="button" name="submit" id="submit" ngModel/><br/>
 </form>
+<vsan-form2 [vsanItem]="firstvsanItem"></vsan-form2>

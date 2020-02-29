@@ -9,12 +9,5 @@ import { Component } from '@angular/core';
 
 
 export class AppComponent{
-    firstvsanItem={
-        id:1,
-        numNodes:'12' ,
-        numCapdisks:'4' ,
-        numDiskgroups:'2' ,
-        ssdSize:'800' ,
-        FTM:'PFTT=1'
-    };
+   
 } 
