@@ -27,7 +27,8 @@ export class VsanformComponent{
                 numCapdisks:'4' ,
                 numDiskgroups:'2' ,
                 ssdSize:'800' ,
-                FTM:'PFTT=1'
+                FTM:'PFTT=1',
+                isFavorite: false
             },
             {
                 id:2,
@@ -36,7 +37,8 @@ export class VsanformComponent{
                 numCapdisks:'4' ,
                 numDiskgroups:'2' ,
                 ssdSize:'1200' ,
-                FTM:'PFTT=2'
+                FTM:'PFTT=2',
+                isFavorite: true
             },
             {
                 id:3,
@@ -45,7 +47,8 @@ export class VsanformComponent{
                 numCapdisks:'4' ,
                 numDiskgroups:'2' ,
                 ssdSize:'2500' ,
-                FTM:'PFTT=3'
+                FTM:'PFTT=3',
+                isFavorite: true
             }
 
         ]

@@ -1,5 +1,5 @@
 <br/>
-<form #vsanForm="ngForm" (ngSubmit)="onSubmit(VsanForm.value)">
+<form class='w' #vsanForm="ngForm" (ngSubmit)="onSubmit(VsanForm.value)">
 	Name of Customer: <input type='text' name='cuName' id='cuName'ngModel/><br/>
 	Number of nodes: <input type="number" name="numNodes" id="numNodes" ngModel/><br/>
 	Number of Disk groups: <input type="number" name="numDiskgroups" id="numDiskgroups" size='4' ngModel/><br/>
@@ -13,6 +13,7 @@
 		<option value="0.75"> PFTT=RAID5 </option>
 		<option value="0.67"> PFTT=RAID6 </option>
 	</select><br/>
+	14th Gen: <input type='checkbox' id='isFavorite' name='isFavorite' ngModel /><br/>
    <input type="button" name="submit" id="submit" ngModel/><br/>
 </form><br/>
 <section>

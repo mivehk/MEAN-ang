@@ -4,6 +4,7 @@ label{
 }
 h1{
     text-align:center;
+    flex:1;
 }
 div{
     text-align:center;
