@@ -22,6 +22,7 @@ export class VsanformComponent{
         vsanItems=[
             {
                 id:1,
+                cuName:'CS-00',
                 numNodes:'12' ,
                 numCapdisks:'4' ,
                 numDiskgroups:'2' ,
@@ -30,6 +31,7 @@ export class VsanformComponent{
             },
             {
                 id:2,
+                cuName:'CS01',
                 numNodes:'8' ,
                 numCapdisks:'4' ,
                 numDiskgroups:'2' ,
@@ -38,6 +40,7 @@ export class VsanformComponent{
             },
             {
                 id:3,
+                cuName:'CS03',
                 numNodes:'12' ,
                 numCapdisks:'4' ,
                 numDiskgroups:'2' ,
