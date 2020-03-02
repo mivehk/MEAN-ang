@@ -15,7 +15,8 @@ import {FavoriteDirective} from './favorite.directive'
     declarations:[
         AppComponent,
         VsanComponent,
-        VsanformComponent
+        VsanformComponent,
+        FavoriteDirective
     ],
     bootstrap:[
         AppComponent
