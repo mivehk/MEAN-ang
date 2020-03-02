@@ -5,3 +5,7 @@
 #submit{
     size:30px;
 }
+input[type='number']{
+    width:50px;
+    
+}

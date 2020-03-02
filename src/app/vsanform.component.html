@@ -14,4 +14,5 @@
 	</select><br/>
    <input type="button" name="submit" id="submit" ngModel/><br/>
 </form>
-<vsan-form2 [vsanItem]="firstvsanItem"></vsan-form2>
+<vsan-form2 (delete)="onVsanItemDelete($event)"
+[vsanItem]="vsanItems[2]"></vsan-form2>
