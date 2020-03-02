@@ -2,8 +2,9 @@
     color:#69f;
     text-align: center;
 }
-#submit{
-    size:30px;
+input[type='button']{
+    width:60px;
+    background-color:#69f;
 }
 input[type='number']{
     width:50px;

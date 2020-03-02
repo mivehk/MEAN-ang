@@ -4,6 +4,8 @@ import {BrowserModule} from '@angular/platform-browser'
 import {FormsModule} from '@angular/forms'
 import {VsanformComponent} from './vsanform.component'
 import {VsanComponent} from './vsan.component'
+import {FavoriteDirective} from './favorite.directive'
+
 
 @NgModule({
     imports:[
