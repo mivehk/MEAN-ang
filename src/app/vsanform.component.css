@@ -4,6 +4,7 @@
     border:#ffab23;
     border-style: inset;
     border-width: 5px ;
+    display: inline-block;
     color:chartreuse;
     /*border-color:#ffab23*/
 }
