@@ -5,6 +5,7 @@ import {FormsModule} from '@angular/forms'
 import {VsanformComponent} from './vsanform.component'
 import {VsanComponent} from './vsan.component'
 import {FavoriteDirective} from './favorite.directive'
+import {VsanListComponent} from './vsanlist.component'
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import {FavoriteDirective} from './favorite.directive'
         AppComponent,
         VsanComponent,
         VsanformComponent,
-        FavoriteDirective
+        FavoriteDirective,
+        VsanListComponent
     ],
     bootstrap:[
         AppComponent

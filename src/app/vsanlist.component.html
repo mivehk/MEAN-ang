@@ -1,0 +1,9 @@
+<header>
+    <div ></div>
+</header>
+<section>
+    <vsan-form-3
+    *ngFor="let vsanItem of vsanItems"
+    [vsanItem]="vsanItem"
+    (delete)="onVsanItemDelete($event)"></vsan-form-3>
+</section>
