@@ -21,14 +21,14 @@ div{
     fill: #bdc2c5;
     cursor: pointer;
   }
-  .favorite.is-favorite {
+  .favorite.is-fav {
       fill: #37ad79;
   }
-  .favorite.is-favorite-hovering {
-      fill: #45bf94;
+  .favorite.is-fav-hovering {
+      fill: #ffab23;
   }
-  .favorite.is-favorite.is-favorite-hovering {
-      fill: #ec4342;
+  .favorite.is-fav.is-fav-hovering {
+      fill: #ffab23;
   }
   :host {
     display: inline-block;
