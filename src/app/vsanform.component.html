@@ -1,11 +1,11 @@
 <br/>
-<form class='w' #vsanForm="ngForm" (ngSubmit)="onSubmit(vsanForm.value)">
-	Name of Customer: <input type='text' name='cuName' id='cuName'ngModel/><br/>
-	Number of nodes: <input type="number" name="numNodes" id="numNodes" ngModel/><br/>
-	Number of Disk groups: <input type="number" name="numDiskgroups" id="numDiskgroups" size='4' ngModel/><br/>
-	Number of capacity disks: <input type="number" name="numCapdisks" id="numCapdisks" size='4' ngModel/><br/>
-	Size of SSD (GB): <input type="number" name="ssdSize" id="ssdSize" ngModel/><br/>
-	Storage Policy: <select name="FTM" id="FTM" ngModel><br/>
+<form class='w' [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+	Name of Customer: <input type='text' name='cuName' id='cuName' formControlName='cuName'/><br/>
+	Number of nodes: <input type="number" name="numNodes" id="numNodes" formControlName='numNodes'/><br/>
+	Number of Disk groups: <input type="number" name="numDiskgroups" id="numDiskgroups" size='4' formControlName='numDiskgroups'/><br/>
+	Number of capacity disks: <input type="number" name="numCapdisks" id="numCapdisks" size='4' formControlName='numCapdisks'/><br/>
+	Size of SSD (GB): <input type="number" name="ssdSize" id="ssdSize" formControlName='ssdSize'/><br/>
+	Storage Policy: <select name="FTM" id="FTM" formControlName='FTM'><br/>
 		<option value="1"> PFTT=0</option>
 		<option value="0.5"> PFTT=1 </option>
 		<option value="0.33"> PFTT=2 </option>
@@ -13,8 +13,8 @@
 		<option value="0.75"> PFTT=RAID5 </option>
 		<option value="0.67"> PFTT=RAID6 </option>
 	</select><br/>
-	14th Gen: <input type='checkbox' id='isFavorite' name='isFavorite' ngModel /><br/>
-   <button type="submit" id="submit" ngModel> Save </button><br/>
+	14th Gen: <input type='checkbox' id='isFavorite' name='isFavorite' formControlName='isFavorite' /><br/>
+   <button type="submit" id="submit" [disabled]='!form.valid'> Save </button><br/>
 </form><br/>
 <section>
 
