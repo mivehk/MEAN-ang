@@ -26,14 +26,14 @@ export class VsanformComponent{
      }   
      ssdSizeValidator(control: FormControl){
          
-         const ssdSize= parseInt(control.value , 10)
+         const ssdsize= parseInt(control.value , 10)
     
          const minSSD = 500;
          const maxSSD = 62000;
-         if ( ssdSize >= minSSD && ssdSize <= maxSSD){
+         if ( ssdsize >= minSSD && ssdsize <= maxSSD){
              return null
          } else{
-             return { ssdSize: true}
+             return { ssdsize: true}
          }
 
      } 

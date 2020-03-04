@@ -4,7 +4,7 @@
     border:#ffab23;
     border-style: inset;
     border-width: 5px ;
-    display: inline-block;
+    /*display: inline-block*/;
     color:chartreuse;
     /*border-color:#ffab23*/
 }
@@ -20,3 +20,12 @@ input[type='text']{
     width:200px;
     
 }
+ul {
+    list-style-type: none;
+  }
+  ul li {
+    margin: 10px 0 10px 0;
+  }
+  .error {
+    color: #d93a3e;
+  }
