@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
-import { FormGroup, FormControl, Validators } from '@angular/forms'
-
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
+import { VsanService} from './vsan.service'
 
 @Component({
     selector: 'vsan-form-1',
@@ -9,19 +9,23 @@ import { FormGroup, FormControl, Validators } from '@angular/forms'
     
 })
 
-export class VsanformComponent{
+export class VsanformComponent {
      form: FormGroup;
+
+     constructor (private formBuilder: FormBuilder,
+     private vsanService: VsanService){}
+
      ngOnInit(){
-         this.form =new FormGroup({
-             cuName: new FormControl('',Validators.compose([
+         this.form = this.formBuilder.group({
+             cuName: this.formBuilder.control('',Validators.compose([
                  Validators.required
              ])),
-             numNodes: new FormControl(),
-             numCapdisks:new FormControl(),
-             numDiskgroups: new FormControl(),
-             ssdSize: new FormControl('',this.ssdSizeValidator),
-             FTM:new FormControl(),
-             isFavorite: new FormControl()
+             numNodes: this.formBuilder.control(),
+             numCapdisks:this.formBuilder.control(),
+             numDiskgroups: this.formBuilder.control(),
+             ssdSize: this.formBuilder.control('',this.ssdSizeValidator),
+             FTM:this.formBuilder.control(),
+             isFavorite: this.formBuilder.control()
          })
      }   
      ssdSizeValidator(control: FormControl){
@@ -39,6 +43,7 @@ export class VsanformComponent{
      } 
      onSubmit(vsanItem){
              console.log(vsanItem);
+             this.vsanService.add(vsanItem);
      }         
 }
     

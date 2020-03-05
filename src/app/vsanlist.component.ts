@@ -1,4 +1,5 @@
-import { Component } from '@angular/core'
+import { Component , OnInit } from '@angular/core'
+import {VsanService} from './vsan.service'
 
 @Component({
     selector: 'vsan-list-2',
@@ -6,8 +7,8 @@ import { Component } from '@angular/core'
     styleUrls: ['./vsanlist.component.css']
 })
 
-export class VsanListComponent{
-  vsanItems=[
+export class VsanListComponent implements OnInit{
+  vsanItems /*=[
             {
                 id:1,
                 cuName:'cs-00',
@@ -39,7 +40,16 @@ export class VsanListComponent{
                 isFavorite: true
             }
 
-        ]  
+        ]  */
+
+        constructor(private vsanService: VsanService){}
+        ngOnInit(){
+            this.vsanItems =this.vsanService.get()
+        }
+        onVsanItemDelete(vsanItem){
+            this.vsanService.delete(vsanItem)
+        }
+
 }
 
 

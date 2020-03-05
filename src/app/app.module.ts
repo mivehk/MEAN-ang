@@ -6,7 +6,7 @@ import {VsanformComponent} from './vsanform.component'
 import {VsanComponent} from './vsan.component'
 import {FavoriteDirective} from './favorite.directive'
 import {VsanListComponent} from './vsanlist.component'
-
+//import {vsanService} from './vsan.service'
 
 @NgModule({
     imports:[
@@ -22,6 +22,9 @@ import {VsanListComponent} from './vsanlist.component'
     ],
     bootstrap:[
         AppComponent
+    ],
+    providers:[
+        //vsanService
     ]
 })
 
