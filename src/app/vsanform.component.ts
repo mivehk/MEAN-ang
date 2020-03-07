@@ -20,12 +20,22 @@ export class VsanformComponent {
              cuName: this.formBuilder.control('',Validators.compose([
                  Validators.required
              ])),
-             numNodes: this.formBuilder.control(),
-             numCapdisks:this.formBuilder.control(),
-             numDiskgroups: this.formBuilder.control(),
+             numNodes: this.formBuilder.control('',Validators.compose([
+                Validators.required
+            ])),
+             numCapdisks:this.formBuilder.control('',Validators.compose([
+                Validators.required
+            ])),
+             numDiskgroups: this.formBuilder.control('',Validators.compose([
+                Validators.required
+            ])),
              ssdSize: this.formBuilder.control('',this.ssdSizeValidator),
-             FTM:this.formBuilder.control(),
-             isFavorite: this.formBuilder.control()
+             FTM:this.formBuilder.control('',Validators.compose([
+                Validators.required
+            ])),
+             isFavorite: this.formBuilder.control('',Validators.compose([
+                Validators.required
+            ]))
          })
      }   
      ssdSizeValidator(control: FormControl){
